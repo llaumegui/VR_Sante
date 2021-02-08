@@ -7,7 +7,8 @@ public class MenuAction : MonoBehaviour
 	public enum Action
 	{
 		Play,
-		Quit
+		Quit,
+		Next,
 	}
 
 	public Action action;
