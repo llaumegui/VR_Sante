@@ -246,7 +246,7 @@ MonoBehaviour:
   sharedProfile: {fileID: 11400000, guid: 4b2ca002a8226bf47b6a078f0dc4b5e3, type: 2}
   isGlobal: 1
   blendDistance: 0
-  weight: 1
+  weight: 0.252
   priority: 0
 --- !u!4 &187355146
 Transform:
@@ -1857,6 +1857,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -179.99998
+      objectReference: {fileID: 0}
+    - target: {fileID: 6659319835311615795, guid: 7cf28b7eb2453c64788ac60d5df877d5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 6726366011908868691, guid: 7cf28b7eb2453c64788ac60d5df877d5,
         type: 3}

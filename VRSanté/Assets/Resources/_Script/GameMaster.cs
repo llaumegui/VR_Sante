@@ -8,7 +8,6 @@ public class GameMaster : MonoBehaviour
 	public static bool OnMenu;
 	public Transform UIPos;
 	public Transform Player;
-	public GameObject Background;
 
 	[Header("Menu")]
 	public GameObject[] Menus;
@@ -32,7 +31,6 @@ public class GameMaster : MonoBehaviour
 		_menuOpened.SetActive(false);
 
 		OnMenu = false;
-		Background.SetActive(false);
 	}
 	void PlayMenu(GameObject UI)
 	{
@@ -42,7 +40,6 @@ public class GameMaster : MonoBehaviour
 
 		UI.SetActive(true);
 		OnMenu = true;
-		Background.SetActive(true);
 	}
 
 	public void MenuSelect(MenuAction.Action act)
