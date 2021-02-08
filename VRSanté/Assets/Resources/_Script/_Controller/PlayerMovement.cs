@@ -19,13 +19,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (!GameMaster.OnMenu)
+		if(!GameMaster.OnMenu)
 			Move();
     }
 
 	void Move()
 	{
-
 		float x = Input.GetAxis("Horizontal");
 		float z = Input.GetAxis("Vertical");
 
