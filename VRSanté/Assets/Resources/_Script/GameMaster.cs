@@ -8,20 +8,33 @@ public class GameMaster : MonoBehaviour
 	public static bool OnMenu;
 	public Transform UIPos;
 	public Transform Player;
+	public GameObject Background;
 	Vector3 GamePos = new Vector3(0,1,0);
 
-	[Header("MainMenu")]
-	public GameObject Menu;
+	[Header("Menu")]
+	public GameObject[] Menus;
 	Camera _cam;
 
 	GameObject _menuOpened;
 
 	private void Start()
 	{
+		ClearMenu();
 		_cam = Camera.main;
-		PlayMenu(Menu);
+		PlayMenu(Menus[0]);
 	}
 
+	void ClearMenu()
+	{
+		foreach (GameObject menu in Menus)
+			menu.SetActive(false);
+
+		if(_menuOpened != null)
+		_menuOpened.SetActive(false);
+
+		OnMenu = false;
+		Background.SetActive(false);
+	}
 	void PlayMenu(GameObject UI)
 	{
 		_menuOpened = UI;
@@ -30,23 +43,24 @@ public class GameMaster : MonoBehaviour
 
 		UI.SetActive(true);
 		OnMenu = true;
-	}
-
-	void CloseMenu()
-	{
-		_menuOpened.SetActive(false);
-		OnMenu = false;
+		Background.SetActive(true);
 	}
 
 	public void MenuSelect(MenuAction.Action act)
 	{
 		if(act == MenuAction.Action.Play)
 		{
-			Player.position = GamePos;
-			CloseMenu();
+			ClearMenu();
+			PlayMenu(Menus[1]);
 		}
 		if (act == MenuAction.Action.Quit)
 			Application.Quit();
+		if (act == MenuAction.Action.Next)
+		{
+			ClearMenu();
+			Player.position = GamePos;
+		}
+			
 	}
 
 }
