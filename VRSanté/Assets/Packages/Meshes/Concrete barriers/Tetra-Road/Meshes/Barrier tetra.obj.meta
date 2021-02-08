@@ -1,19 +1,74 @@
 fileFormatVersion: 2
-guid: 84bfd6d3e81c5bb4d940922ef6615ddc
+guid: 6f7f0798d552cde4db3a4527cc4fbde2
+labels:
+- Architecture
+- Barrier
+- Concrete
+- Industrial
+- Prop
 ModelImporter:
   serializedVersion: 19301
-  internalIDToNameTable: []
-  externalObjects:
+  internalIDToNameTable:
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: 01 - Default
-    second: {fileID: 2100000, guid: 47391149715a4a545ab9c0682c94daa1, type: 2}
+      1: 100000
+    second: barrier
+  - first:
+      1: 100002
+    second: //RootNode
+  - first:
+      1: 100004
+    second: Barrier_tetra
+  - first:
+      1: 100006
+    second: Barrier_tetra_collider
+  - first:
+      4: 400000
+    second: barrier
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      4: 400004
+    second: Barrier_tetra
+  - first:
+      4: 400006
+    second: Barrier_tetra_collider
+  - first:
+      23: 2300000
+    second: barrier
+  - first:
+      23: 2300002
+    second: Barrier_tetra
+  - first:
+      23: 2300004
+    second: Barrier_tetra_collider
+  - first:
+      33: 3300000
+    second: barrier
+  - first:
+      33: 3300002
+    second: Barrier_tetra
+  - first:
+      33: 3300004
+    second: Barrier_tetra_collider
+  - first:
+      43: 4300000
+    second: barrier
+  - first:
+      43: 4300002
+    second: Barrier_tetra
+  - first:
+      43: 4300004
+    second: Barrier_tetra_collider
+  - first:
+      95: 9500000
+    second: //RootNode
+  externalObjects: {}
   materials:
-    materialImportMode: 1
+    materialImportMode: 0
     materialName: 0
-    materialSearch: 1
-    materialLocation: 1
+    materialSearch: 0
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -36,19 +91,19 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
-    importVisibility: 1
+    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
-    fileIdsGeneration: 2
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
@@ -59,18 +114,18 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     meshOptimizationFlags: -1
-    indexFormat: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 3
-    normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
@@ -86,14 +141,14 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
-    skeletonHasParents: 1
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   avatarSetup: 0
   additionalBone: 0

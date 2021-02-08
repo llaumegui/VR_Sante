@@ -9,7 +9,6 @@ public class GameMaster : MonoBehaviour
 	public Transform UIPos;
 	public Transform Player;
 	public GameObject Background;
-	Vector3 GamePos = new Vector3(0,1,0);
 
 	[Header("Menu")]
 	public GameObject[] Menus;
@@ -58,7 +57,6 @@ public class GameMaster : MonoBehaviour
 		if (act == MenuAction.Action.Next)
 		{
 			ClearMenu();
-			Player.position = GamePos;
 		}
 			
 	}

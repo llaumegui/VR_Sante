@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5971333365105044090}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,9 +42,9 @@ GameObject:
   - component: {fileID: 447151253420613943}
   - component: {fileID: 125573914018523038}
   - component: {fileID: 125573914018523039}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ragdoll
-  m_TagString: Untagged
+  m_TagString: Victime
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 8751746830953121846}
   - component: {fileID: 125573913867177154}
   - component: {fileID: 125573913867177155}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -167,7 +167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2951439081904924489}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 125573914108106264}
   - component: {fileID: 125573914108106266}
   - component: {fileID: 125573914108106265}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightHips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.106400035, y: -0.12405211, z: -0.010277376}
+  m_ConnectedAnchor: {x: 0.1064, y: -0.12405193, z: -0.010277435}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 125573913459144477}
   - component: {fileID: 125573913459144478}
   - component: {fileID: 125573913459144476}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftKnee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,7 +375,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.046272486, y: -0.43359736, z: 0.018805046}
+  m_ConnectedAnchor: {x: -0.0462725, y: -0.4335973, z: 0.018804986}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 5228448549452313872}
   - component: {fileID: 7498963636267064853}
   - component: {fileID: 5339629384878380788}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -500,7 +500,7 @@ GameObject:
   - component: {fileID: 125573915090004296}
   - component: {fileID: 125573915090004297}
   - component: {fileID: 125573915090004303}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightKnee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -564,7 +564,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.046269998, y: -0.4335998, z: 0.018802658}
+  m_ConnectedAnchor: {x: 0.046269983, y: -0.43359968, z: 0.018802598}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -609,7 +609,7 @@ GameObject:
   - component: {fileID: 3200895910802796594}
   - component: {fileID: 540179037409660185}
   - component: {fileID: 972144469562713058}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_LeftHips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -688,7 +688,7 @@ GameObject:
   - component: {fileID: 6418343389647451254}
   - component: {fileID: 7200028609518839052}
   - component: {fileID: 7323455492035822156}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_RightKnee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -767,7 +767,7 @@ GameObject:
   - component: {fileID: 2243924967440301364}
   - component: {fileID: 6056789283292500492}
   - component: {fileID: 8664468194372620606}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_RightElbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -846,7 +846,7 @@ GameObject:
   - component: {fileID: 1153962604057889}
   - component: {fileID: 1978171528646758994}
   - component: {fileID: 4419680687716246285}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -926,7 +926,7 @@ GameObject:
   - component: {fileID: 125573914592238931}
   - component: {fileID: 125573914592238956}
   - component: {fileID: 125573914592238930}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightElbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -975,10 +975,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.000000035762728
-  m_Height: 0.00000017881364
+  m_Radius: 0.05
+  m_Height: 0.5
   m_Direction: 0
-  m_Center: {x: 0.00000008940682, y: 0, z: 0}
+  m_Center: {x: 0.2, y: 0, z: 0}
 --- !u!144 &125573914592238930
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -990,7 +990,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.30605567, y: -0.047452595, z: -0.022280056}
+  m_ConnectedAnchor: {x: 0.3060556, y: -0.047452476, z: -0.022280175}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -1036,7 +1036,7 @@ GameObject:
   - component: {fileID: 125573914152845952}
   - component: {fileID: 125573914152845953}
   - component: {fileID: 125573914152845959}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1098,7 +1098,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000001899898, y: 0.45478928, z: 0.0000008842055}
+  m_ConnectedAnchor: {x: 0, y: 0.45478964, z: 0.0000007649969}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -1144,7 +1144,7 @@ GameObject:
   - component: {fileID: 125573913409876928}
   - component: {fileID: 125573913409876930}
   - component: {fileID: 125573913409876929}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1208,7 +1208,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.18349019, y: 0.23650758, z: -0.06684721}
+  m_ConnectedAnchor: {x: 0.18349, y: 0.23650794, z: -0.06684721}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -1254,7 +1254,7 @@ GameObject:
   - component: {fileID: 125573914612038143}
   - component: {fileID: 125573914612038136}
   - component: {fileID: 125573914612038142}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftElbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1302,10 +1302,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.000000011920929
-  m_Height: 0.000000059604645
+  m_Radius: 0.05
+  m_Height: 0.5
   m_Direction: 0
-  m_Center: {x: -0.000000029802322, y: 0, z: 0}
+  m_Center: {x: -0.2, y: 0, z: 0}
 --- !u!144 &125573914612038142
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -1317,7 +1317,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.30604696, y: -0.047455855, z: -0.022279091}
+  m_ConnectedAnchor: {x: -0.30604702, y: -0.047455497, z: -0.02227921}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 1, z: 0}
   m_TwistLimitSpring:
@@ -1363,7 +1363,7 @@ GameObject:
   - component: {fileID: 125573913388435297}
   - component: {fileID: 125573913388435299}
   - component: {fileID: 125573913388435298}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftHips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1427,7 +1427,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.106396005, y: -0.12405205, z: -0.010277376}
+  m_ConnectedAnchor: {x: -0.106396064, y: -0.12405187, z: -0.010277376}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -1472,7 +1472,7 @@ GameObject:
   - component: {fileID: 1053461056874569749}
   - component: {fileID: 1253403910092661087}
   - component: {fileID: 1127288184008280347}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_LeftElbow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1551,7 +1551,7 @@ GameObject:
   - component: {fileID: 9208845148169609065}
   - component: {fileID: 1396439712131717536}
   - component: {fileID: 3224088393990030803}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_LeftKnee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1631,7 +1631,7 @@ GameObject:
   - component: {fileID: 125573915121210379}
   - component: {fileID: 125573915121210373}
   - component: {fileID: 125573915121210372}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: MiddleSpine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1696,7 +1696,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000014156103, y: 0.18145023, z: -0.010277346}
+  m_ConnectedAnchor: {x: 0, y: 0.18145023, z: -0.010277465}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -1741,7 +1741,7 @@ GameObject:
   - component: {fileID: 8047728433132815842}
   - component: {fileID: 4118185395971112424}
   - component: {fileID: 4131913086841789498}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1820,7 +1820,7 @@ GameObject:
   - component: {fileID: 7885694350756530067}
   - component: {fileID: 8093998978874166160}
   - component: {fileID: 4696665618560805864}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Pelvis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1900,7 +1900,7 @@ GameObject:
   - component: {fileID: 125573914156760609}
   - component: {fileID: 125573914156760611}
   - component: {fileID: 125573914156760610}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1964,7 +1964,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.18349464, y: 0.236504, z: -0.06684304}
+  m_ConnectedAnchor: {x: -0.18349479, y: 0.23650448, z: -0.06684316}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
@@ -2009,7 +2009,7 @@ GameObject:
   - component: {fileID: 580529969769328573}
   - component: {fileID: 4544890091109229927}
   - component: {fileID: 2737754754300695459}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2088,7 +2088,7 @@ GameObject:
   - component: {fileID: 2975732198014784445}
   - component: {fileID: 7080062229854763360}
   - component: {fileID: 5424108435943684450}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2167,7 +2167,7 @@ GameObject:
   - component: {fileID: 171769086286065821}
   - component: {fileID: 9028466056587213177}
   - component: {fileID: 6120161024486532966}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_RightHips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2246,7 +2246,7 @@ GameObject:
   - component: {fileID: 710894682183439322}
   - component: {fileID: 148652076862105370}
   - component: {fileID: 4074662988320343400}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SM_MiddleSpine
   m_TagString: Untagged
   m_Icon: {fileID: 0}

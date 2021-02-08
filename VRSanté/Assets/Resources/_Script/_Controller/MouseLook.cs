@@ -11,6 +11,9 @@ public class MouseLook : MonoBehaviour
 
 	float _xRotation = 0;
 
+	public KeyCode Escape;
+	bool _paused;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +24,13 @@ public class MouseLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+		if(!_paused)
 		Rotation();
+
+		if (Input.GetKeyDown(Escape))
+			_paused = true;
+		if (Input.GetMouseButtonDown(0))
+			_paused = false;
 	}
 
 	void Rotation()
