@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2864522495666285298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2135216341053928191}
+  m_Layer: 0
+  m_Name: CrouchEnd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2135216341053928191
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2864522495666285298}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4502407488692877749}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4930603219899235078
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +913,7 @@ Transform:
   - {fileID: 5239110277771571023}
   - {fileID: 5239110278298642332}
   - {fileID: 5239110277529522520}
+  - {fileID: 4502407488692877749}
   m_Father: {fileID: 3761319462354117607}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -898,9 +929,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 273c9281e933db2459a0a4b65f67420e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 30
+  Speed: 10
   CheckDistance: 0.1
   Foot: {fileID: 5239110278298642332}
+  Crouch: 306
+  Camera: {fileID: 5239110279002573408}
+  CrouchStart: {fileID: 4502407488692877749}
+  TimeLerpCrouch: 0.25
 --- !u!54 &5239110278104971813
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -963,7 +998,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIPos: {fileID: 5239110277682075786}
   Player: {fileID: 5239110278104971815}
-  Background: {fileID: 0}
   Menus:
   - {fileID: 5239110278516748320}
   - {fileID: 5239110278228068467}
@@ -979,9 +1013,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67d7cdfca25948645bc8e26931eba449, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxDistance: 100
-  spring: 50
-  damper: 5
+  maxDistance: 5
+  spring: 200
+  damper: 20
   drag: 10
   angularDrag: 5
   distance: 0.2
@@ -1356,7 +1390,7 @@ Transform:
   m_GameObject: {fileID: 5239110278516748320}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children:
   - {fileID: 5239110278033975236}
   - {fileID: 5239110277362108338}
@@ -1636,4 +1670,35 @@ Transform:
   - {fileID: 5239110278160913092}
   m_Father: {fileID: 3761319462354117607}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5485413915095961568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4502407488692877749}
+  m_Layer: 0
+  m_Name: CrouchStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4502407488692877749
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5485413915095961568}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2135216341053928191}
+  m_Father: {fileID: 5239110278104971815}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -11,8 +11,20 @@ public class PlayerMovement : MonoBehaviour
 	[Range(0,1)] public float CheckDistance;
 	public Transform Foot;
 
+	[Space]
+	public KeyCode Crouch;
+	public Transform Camera;
+	public Transform CrouchStart;
+	Transform _crouchEnd;
+
+
+	float _interpolator;
+	public float TimeLerpCrouch;
+	bool _crouch;
+
 	void Start()
     {
+		_crouchEnd = CrouchStart.GetChild(0);
 		_rb = GetComponent<Rigidbody>();
     }
 
@@ -20,8 +32,36 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
 		if (!GameMaster.OnMenu)
+		{
 			Move();
+			Crouching();
+		}
     }
+
+	void Crouching()
+	{
+		if (Input.GetKeyDown(Crouch))
+			_crouch = true;
+		if (Input.GetKeyUp(Crouch))
+			_crouch = false;
+
+		Camera.position = Vector3.Lerp(CrouchStart.position, _crouchEnd.position, _interpolator);
+
+		if (_crouch)
+		{
+			_interpolator += Time.deltaTime / TimeLerpCrouch;
+			if (_interpolator > 1)
+				_interpolator = 1;
+		}
+		else
+		{
+			_interpolator -= Time.deltaTime / TimeLerpCrouch;
+			if (_interpolator < 0)
+				_interpolator = 0;
+		}
+
+
+	}
 
 	void Move()
 	{
